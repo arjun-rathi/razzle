@@ -178,7 +178,6 @@ describe('razzle build', () => {
     const output = shell.exec('yarn build --noninteractive');
     // Create asset manifest
     expect(fileExists('build/assets.json')).toBeTruthy();
-
     // We modify the default server output filename -> custom.js
     expect(fileExists('build/custom.js')).toBeTruthy();
     expect(fileExists('build/custom.js.map')).toBeTruthy();
