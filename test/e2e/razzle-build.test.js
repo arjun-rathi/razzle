@@ -15,7 +15,6 @@ shell.config.silent = silent;
 process.env.RAZZLE_NONINTERACTIVE = "true";
 
 const stageName = 'stage-build';
-
 const directoryExists = (dirPath) => fs.existsSync(dirPath) && fs.lstatSync(dirPath).isDirectory();
 const fileExists = (dirPath) => fs.existsSync(dirPath);
 
