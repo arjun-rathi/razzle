@@ -26,7 +26,6 @@ describe('razzle start', () => {
     });
 
     jasmine.DEFAULT_TIMEOUT_INTERVAL = 1000000; // eslint-disable-line no-undef
-
     it('should start a dev server', () => {
       util.setupStageWithExample(stageName, 'basic');
       let outputTest;
