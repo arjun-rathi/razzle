@@ -192,6 +192,8 @@ describe('create-razzle-app', () => {
     expect(output.code).toBe(0);
   });
 
+  
+  
   it('should create app from file example', () => {
     util.setupStage(stageName);
     const output = shell.exec(
