@@ -28,7 +28,6 @@ describe('razzle build', () => {
     const output = shell.exec('yarn build --noninteractive');
     // Create asset manifest
     expect(fileExists('build/assets.json')).toBeTruthy();
-
     // Create server.js
     expect(fileExists('build/server.js')).toBeTruthy();
     expect(fileExists('build/server.js.map')).toBeTruthy();
