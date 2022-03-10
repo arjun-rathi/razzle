@@ -126,6 +126,7 @@ describe('razzle build', () => {
     expect(output.code).toBe(0);
   });
 
+  
   it('should compile files in spa mode', () => {
     util.setupStageWithFixture(stageName, 'build-default-spa');
     const output = shell.exec('yarn build --noninteractive');
